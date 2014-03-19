@@ -1,0 +1,112 @@
+section
+  article
+    h1 Kimono Labs
+    h2 Turn websites into structured APIs from your browser in seconds
+
+section
+  img(src="http://ycombinator.com/images/yc500.gif")
+
+section
+  article
+    :markdown
+      Y Combinator is a seed accelerator that provides money, advice, and connections for startups. In exchange, they take an average 6% of the company's equity. As of 2013, Y Combinator has funded over 500 companies.
+
+section
+  iframe(src="http://www.kimonolabs.com/" seamless)
+
+section
+  iframe(src="http://www.kimonolabs.com/examples" seamless)
+
+section
+  img(src="http://f.cl.ly/items/3Q1P3C2Y012R1y0L2Q26/Screen%20Shot%202014-03-19%20at%2011.35.19%20AM.png")
+
+section
+  article
+    h1 About the App
+
+section
+  article
+    h1 Node.js
+    h2 (Of course)
+
+section.code
+  article
+    :markdown
+      ```sh
+      $ heroku addons -a kimonolabs.com
+
+      logentries:tryit
+      loggly:mole
+      mongolab:dedicated-cluster
+      newrelic:wayne
+      rediscloud:500
+      ssl:endpoint
+      ```
+
+section.code
+  article
+    :markdown
+      ```sh
+      $ heroku ps -a kimonolabs.com
+
+      croncrawl (2X): `forever croncrawl.js`
+      10 process
+
+      cronv2 (2X): `forever cronv2.js`
+      30 processes
+
+      web (2X): `forever -m 5 server.js`
+      20 processes
+      ```
+
+section
+  article
+    h1 Growing Pains
+    h2 The Digg/Reddit/HN effect
+
+section
+  article
+    :markdown
+      "Sometimes, we see R14 errors but cannot trace back what caused the the dyno to
+      exceed it's memory quota i.e. the last few requests it handles before dying
+      appear to be innocuous completely."
+
+section
+  article
+    :markdown
+      "Our site is often totally unreachable even when R14s and H12s are no where to be
+      seen, with everything in our logs looking fine and dandy with super quick
+      response times (<50ms) but still, the site is unreachable."
+
+section
+  article
+    :markdown
+      "When we switched to PX dynos in hopes of completely avoiding R14 errors, we did
+      avoid R14 errors but the dynos somehow entered a state where they refused to
+      respond to http requests (again without any complaints in the logs)."
+
+section
+  article
+    h1 How can Heroku help?
+    h2 Start by talking about the problem.
+
+section
+  article
+    h1 Pagination FTW
+    h2 A cheap way to improve API performance
+
+section
+  article
+    :markdown
+      "Pagination enables one Kimono API to step through several subsequent pages
+      on a website, typically by following a 'Next page' or 'More' button/link,
+      in order to retrieve a large data set across several pages."
+
+section
+  img(src="http://cl.ly/image/1L0C1u0g3F3g/Screen%20Shot%202014-03-19%20at%2011.36.44%20AM.png")
+
+
+section
+  article
+    h1 The Moral
+    h2 Talk to customers. They're not so scary.

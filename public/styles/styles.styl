@@ -1,0 +1,89 @@
+// https://s3.amazonaws.com/design.heroku/logos/heroku-logo-purple.svg
+// https://s3.amazonaws.com/design.heroku/logos/heroku-logo-white.svg
+// https://s3.amazonaws.com/design.heroku/logos/heroku-mark-purple.svg
+// https://s3.amazonaws.com/design.heroku/logos/heroku-mark-white.svg
+
+backgroundColor = white
+textColor = black
+
+// Layout
+//---------------------------------------------------------
+
+*, *:before, *:after
+  -moz-box-sizing border-box
+  -webkit-box-sizing border-box
+  box-sizing border-box
+
+html, body
+  width 100%
+  height 100%
+
+body
+  font-family "Raleway", "helvetica neue", helvetica, arial
+  margin 0
+  padding 0
+  color textColor
+  background backgroundColor
+
+section
+  display block
+  position relative
+  margin 0
+  padding 0
+  height 100%
+  width 100%
+  padding 20px
+
+  > article, > img
+    position absolute
+    top 50%
+    left 50%
+    -webkit-transform translate(-50%, -50%)
+    transform translate(-50%, -50%)
+    overflow hidden
+
+  > img
+    max-width: 60%
+    max-height: 60%
+
+  > iframe
+    position: relative
+    width: 100%
+    height: 100%
+
+// Typography
+//---------------------------------------------------------
+
+h1, h2
+  font-weight bold
+  text-align center
+  line-height 1.3
+  margin 0
+  padding 0
+
+h1
+  font-size 72px
+
+h2
+  font-size 36px
+  opacity 0.5
+
+p
+  text-align center
+  font-size 36px
+  line-height 1.5
+  color rgba(textColor, 0.7)
+  strong
+    color textColor
+
+a
+  color textColor
+
+pre > code
+  font-size: 32px
+
+section.code
+  background #F8F8F8
+
+// .hljs
+//   background: none
