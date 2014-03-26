@@ -1,3 +1,8 @@
+section.title
+  article
+    h1 The Kimono Story
+    h2 A tale of viral growth, performance bottlenecks, fear, and paginated redemption.
+
 section
   article
     h1 Kimono Labs
@@ -17,20 +22,27 @@ section
 section
   iframe(src="http://www.kimonolabs.com/examples" seamless)
 
-section
+section.title
   article
-    h1 About the App
+    h1 The Setup
+    h2 What is this app made of?
 
 section
   article
     h1 Node.js
-    h2 (Of course)
+    h2 (A wise choice)
+
+
+section
+  article
+    h1 Multi-Buildpack
+    h2 Node + PhantomJS + Casper
 
 section.code
   article
     :markdown
       ```sh
-      $ heroku addons -a kimonolabs.com
+      $ heroku addons -a trykimono
 
       logentries:tryit
       loggly:mole
@@ -44,7 +56,7 @@ section.code
   article
     :markdown
       ```sh
-      $ heroku ps -a kimonolabs.com
+      $ heroku ps -a trykimono
 
       croncrawl (2X): `forever croncrawl.js`
       10 process
@@ -56,7 +68,7 @@ section.code
       20 processes
       ```
 
-section
+section.title
   article
     h1 Growing Pains
     h2 The Digg/Reddit/HN effect
@@ -82,15 +94,34 @@ section
       avoid R14 errors but the dynos somehow entered a state where they refused to
       respond to http requests (again without any complaints in the logs)."
 
-section
+section.title
   article
     h1 How can Heroku help?
-    h2 Start by talking about the problem.
+    h2 Start by talking about the app.
 
 section
   article
-    h1 Pagination FTW
-    h2 A cheap way to improve API performance
+    h1 I tried Kimono. I love it.
+
+section
+  article
+    h1 Why Mongo?
+
+section
+  article
+    h1 When did performance start waning?
+
+section
+  article
+    h1 What have you tried to fix it?
+
+section.title
+  article
+    h1 The Culprit?
+
+section
+  article
+    h1 Pagination!
 
 section
   article
@@ -102,8 +133,23 @@ section
 section
   img(src="http://cl.ly/image/1L0C1u0g3F3g/Screen%20Shot%202014-03-19%20at%2011.36.44%20AM.png")
 
+section.title
+  article
+    h1 Takeaways
+    h2 What did I learn from this?
 
 section
   article
-    h1 The Moral
-    h2 Talk to customers. They're not so scary.
+    h2 Problems aren't always technical.
+
+section
+  article
+    h2 Customers are people. They're not so scary.
+
+section
+  article
+    h2 A phone call goes a long way.
+
+section.title
+  article
+    h1 Fin.
